@@ -1,0 +1,28 @@
+<h1>Listing messages</h1>
+
+<table>
+  <tr>
+    <th>Smsmessagesid</th>
+    <th>Accountsid</th>
+    <th>Body</th>
+    <th>From</th>
+    <th>To</th>
+  </tr>
+
+<% @messages.each do |message| %>
+  <tr>
+    <td><%=h message.SmsMessageSid %></td>
+    <td><%=h message.AccountSid %></td>
+    <td><%=h message.Body %></td>
+    <td><%=h message.From %></td>
+    <td><%=h message.To %></td>
+    <td><%= link_to 'Show', message %></td>
+    <td><%= link_to 'Edit', edit_message_path(message) %></td>
+    <td><%= link_to 'Destroy', message, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New message', new_message_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  SmsMessageSid: MyString
+  AccountSid: MyString
+  Body: MyString
+  From: MyString
+  To: MyString
+
+two:
+  SmsMessageSid: MyString
+  AccountSid: MyString
+  Body: MyString
+  From: MyString
+  To: MyString

@@ -1,0 +1,28 @@
+<p>
+  <b>Smsmessagesid:</b>
+  <%=h @message.SmsMessageSid %>
+</p>
+
+<p>
+  <b>Accountsid:</b>
+  <%=h @message.AccountSid %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @message.Body %>
+</p>
+
+<p>
+  <b>From:</b>
+  <%=h @message.From %>
+</p>
+
+<p>
+  <b>To:</b>
+  <%=h @message.To %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
