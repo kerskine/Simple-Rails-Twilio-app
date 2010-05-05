@@ -40,10 +40,12 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.xml
   def create
-#    @message = Message.new(params[:message])
-# Hack from Thoughtbot, but you should has input and use a class in the model to really do this right
-#
-     @message = Message.new(params)
+  # suggested fix from boston.rb
+
+  # @message = Message.new(params[:message])
+
+    @message = Message.new(:SmsMessageSid => params[:SmsMessageSid], :AccountSid => params[:AccountSid], :Body => params[:Body], :From => params[:From], :To =>params[:To])
+
 
     respond_to do |format|
       if @message.save
