@@ -40,12 +40,7 @@ class MessagesController < ApplicationController
   # POST /messages
   # POST /messages.xml
   def create
-  # suggested fix from boston.rb
-
-  # @message = Message.new(params[:message])
-
-    @message = Message.new(:SmsMessageSid => params[:SmsMessageSid], :AccountSid => params[:AccountSid], :Body => params[:Body], :From => params[:From], :To =>params[:To])
-
+    @message = Message.new(params[:message])
 
     respond_to do |format|
       if @message.save
@@ -87,4 +82,30 @@ class MessagesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def twilio_create
+    @message = Message.new(:SmsMessageSid => params[:SmsMessageSid], :AccountSid => params[:AccountSid], :Body => params[:Body], :From => params[:From], :To =>params[:To])
+    
+    respond_to do |format|
+      if @message.save
+        format.xml { head :ok }
+      else
+        format.xml { render :xml => @message.errors, :status => :unprocessable_entiity }
+      end
+    end
+  end
+
+  def twilio_update
+    @message = Message.find(:SmsMessageSid => params[:id])
+
+    respond_to do |format|
+      if @message.update_attributes(params[:message])
+        format.xml  { head :ok }
+      else
+        format.xml  { render :xml => @message.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+
 end

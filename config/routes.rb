@@ -1,6 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :messages
 
+  map.resources :messages, :collection => {:twilio_create => :post}
+
+  map.resource :messages, :member => {:twilio_update => :post}
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
