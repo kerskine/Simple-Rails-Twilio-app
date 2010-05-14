@@ -550,3 +550,408 @@ Processing MessagesController#index (for 127.0.0.1 at 2010-05-12 11:18:47) [GET]
 Rendering template within layouts/messages
 Rendering messages/index
 Completed in 47ms (View: 39, DB: 2) | 200 OK [http://0.0.0.0/messages]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-05-13 11:24:35) [GET]
+  [4;36;1mMessage Load (2.0ms)[0m   [0;1mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 345ms (View: 327, DB: 2) | 200 OK [http://0.0.0.0/messages]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-13 11:24:38) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 53ms (View: 46, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-13 11:24:53) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 15ms (View: 9, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-13 11:24:53) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-13 11:24:55) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 14ms (View: 7, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-13 11:25:42) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 19ms (View: 13, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 11:25:59) [POST]
+  Parameters: {"message"=>{"Body"=>"hi boo boo", "From"=>"9785553434", "To"=>"ewr"}, "commit"=>"Create"}
+  [4;35;1mMessage Create (0.6ms)[0m   [0mINSERT INTO "messages" ("SmsMessageSid", "AccountSid", "updated_at", "Body", "From", "To", "created_at") VALUES(NULL, NULL, '2010-05-13 15:25:59', 'hi boo boo', '9785553434', 'ewr', '2010-05-13 15:25:59')[0m
+Redirected to http://0.0.0.0:3000/messages/13
+Completed in 69ms (DB: 1) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2010-05-13 11:25:59) [GET]
+  Parameters: {"id"=>"13"}
+  [4;36;1mMessage Load (0.4ms)[0m   [0;1mSELECT * FROM "messages" WHERE ("messages"."id" = 13) [0m
+Rendering template within layouts/messages
+Rendering messages/show
+Completed in 42ms (View: 35, DB: 0) | 200 OK [http://0.0.0.0/messages/13]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-05-13 11:26:01) [GET]
+  [4;35;1mMessage Load (1.7ms)[0m   [0mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 135ms (View: 128, DB: 2) | 200 OK [http://0.0.0.0/messages]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-13 11:34:24) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 11:34:34) [POST]
+  Parameters: {"message"=>{"Body"=>"test teasst", "To"=>"9788848113"}, "commit"=>"Create"}
+  [4;36;1mMessage Create (0.5ms)[0m   [0;1mINSERT INTO "messages" ("SmsMessageSid", "AccountSid", "updated_at", "Body", "From", "To", "created_at") VALUES(NULL, NULL, '2010-05-13 15:34:34', 'test teasst', NULL, '9788848113', '2010-05-13 15:34:34')[0m
+Redirected to http://0.0.0.0:3000/messages/14
+Completed in 13ms (DB: 0) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2010-05-13 11:34:34) [GET]
+  Parameters: {"id"=>"14"}
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM "messages" WHERE ("messages"."id" = 14) [0m
+Rendering template within layouts/messages
+Rendering messages/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/messages/14]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-05-13 11:34:36) [GET]
+  [4;36;1mMessage Load (1.7ms)[0m   [0;1mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 52ms (View: 45, DB: 2) | 200 OK [http://0.0.0.0/messages]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-13 12:07:04) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 18ms (View: 12, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 12:07:11) [POST]
+  Parameters: {"message"=>{"Body"=>"adfasdf", "From"=>"asdfasdf", "To"=>"asdfasdf"}, "commit"=>"Create"}
+  [4;35;1mMessage Create (0.6ms)[0m   [0mINSERT INTO "messages" ("SmsMessageSid", "AccountSid", "updated_at", "Body", "From", "To", "created_at") VALUES(NULL, NULL, '2010-05-13 16:07:11', 'adfasdf', 'asdfasdf', 'asdfasdf', '2010-05-13 16:07:11')[0m
+Redirected to http://0.0.0.0:3000/messages/15
+Completed in 13ms (DB: 1) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2010-05-13 12:07:11) [GET]
+  Parameters: {"id"=>"15"}
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM "messages" WHERE ("messages"."id" = 15) [0m
+Rendering template within layouts/messages
+Rendering messages/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/messages/15]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-05-13 12:07:13) [GET]
+  [4;35;1mMessage Load (2.0ms)[0m   [0mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 56ms (View: 49, DB: 2) | 200 OK [http://0.0.0.0/messages]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-13 12:08:49) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 12ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 12:09:07) [POST]
+  Parameters: {"message"=>{"Body"=>"test", "From"=>"9785719921", "To"=>"9788848113"}, "commit"=>"Create"}
+  [4;36;1mMessage Create (0.5ms)[0m   [0;1mINSERT INTO "messages" ("SmsMessageSid", "AccountSid", "updated_at", "Body", "From", "To", "created_at") VALUES(NULL, NULL, '2010-05-13 16:09:07', 'test', '9785719921', '9788848113', '2010-05-13 16:09:07')[0m
+Redirected to http://0.0.0.0:3000/messages/16
+Completed in 41ms (DB: 0) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2010-05-13 12:09:07) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM "messages" WHERE ("messages"."id" = 16) [0m
+Rendering template within layouts/messages
+Rendering messages/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/messages/16]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-05-13 12:09:09) [GET]
+  [4;36;1mMessage Load (2.0ms)[0m   [0;1mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 151ms (View: 54, DB: 2) | 200 OK [http://0.0.0.0/messages]
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-05-13 12:21:48) [GET]
+
+SyntaxError (/Users/keith/cookbook/twilio/app/controllers/messages_controller.rb:46: dynamic constant assignment
+    API_VERSION = '2008-08-01'
+                 ^
+/Users/keith/cookbook/twilio/app/controllers/messages_controller.rb:49: dynamic constant assignment
+    ACCOUNT_SID = 'AC8eddd770e69ad61de3fef0b4671bd62d'
+                 ^
+/Users/keith/cookbook/twilio/app/controllers/messages_controller.rb:50: dynamic constant assignment
+    ACCOUNT_TOKEN = 'f1b8d4fa45a5b275494be3b1abf14f2b'
+                   ^
+/Users/keith/cookbook/twilio/app/controllers/messages_controller.rb:53: dynamic constant assignment
+    CALLER_ID = '978-571-9921'
+               ^):
+  
+
+Rendered rescues/_trace (36.8ms)
+Rendered rescues/_request_and_response (17.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2010-05-13 12:23:31) [GET]
+
+SyntaxError (/Users/keith/cookbook/twilio/app/controllers/messages_controller.rb:46: dynamic constant assignment
+    API_VERSION = '2008-08-01'
+                 ^
+/Users/keith/cookbook/twilio/app/controllers/messages_controller.rb:49: dynamic constant assignment
+    ACCOUNT_SID = 'AC8eddd770e69ad61de3fef0b4671bd62d'
+                 ^
+/Users/keith/cookbook/twilio/app/controllers/messages_controller.rb:50: dynamic constant assignment
+    ACCOUNT_TOKEN = 'f1b8d4fa45a5b275494be3b1abf14f2b'
+                   ^):
+  
+
+Rendered rescues/_trace (35.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-13 12:30:42) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 12:31:34) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+
+NoMethodError (undefined method `map' for #<Message:0x22c430c>):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1427:in `set_form_data'
+  lib/twiliolib.rb:128:in `fetch'
+  lib/twiliolib.rb:75:in `request'
+  app/controllers/messages_controller.rb:58:in `create'
+
+Rendered rescues/_trace (131.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 12:33:01) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `map' for #<Class:0x2516e48>):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1427:in `set_form_data'
+  lib/twiliolib.rb:128:in `fetch'
+  lib/twiliolib.rb:75:in `request'
+  app/controllers/messages_controller.rb:58:in `create'
+
+Rendered rescues/_trace (40.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 12:39:25) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+  [4;36;1mMessage Create (0.5ms)[0m   [0;1mINSERT INTO "messages" ("SmsMessageSid", "AccountSid", "updated_at", "Body", "From", "To", "created_at") VALUES(NULL, NULL, '2010-05-13 16:39:25', 'test from the test', '9785719921', '9785669432', '2010-05-13 16:39:25')[0m
+Redirected to http://0.0.0.0:3000/messages/17
+Completed in 12ms (DB: 0) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2010-05-13 12:39:25) [GET]
+  Parameters: {"id"=>"17"}
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM "messages" WHERE ("messages"."id" = 17) [0m
+Rendering template within layouts/messages
+Rendering messages/show
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/messages/17]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 12:40:14) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `map' for #<Class:0x23b5b1c>):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1427:in `set_form_data'
+  lib/twiliolib.rb:128:in `fetch'
+  lib/twiliolib.rb:75:in `request'
+  app/controllers/messages_controller.rb:58:in `create'
+
+Rendered rescues/_trace (39.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 12:55:13) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `map' for #<Class:0x22dbdb8>):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1427:in `set_form_data'
+  lib/twiliolib.rb:128:in `fetch'
+  lib/twiliolib.rb:75:in `request'
+  app/controllers/messages_controller.rb:58:in `create'
+
+Rendered rescues/_trace (126.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 13:05:43) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+  [4;36;1mMessage Create (0.6ms)[0m   [0;1mINSERT INTO "messages" ("SmsMessageSid", "AccountSid", "updated_at", "Body", "From", "To", "created_at") VALUES(NULL, NULL, '2010-05-13 17:05:43', 'test from the test', '9785719921', '9785669432', '2010-05-13 17:05:43')[0m
+Redirected to http://0.0.0.0:3000/messages/18
+Completed in 380ms (DB: 1) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2010-05-13 13:05:43) [GET]
+  Parameters: {"id"=>"18"}
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM "messages" WHERE ("messages"."id" = 18) [0m
+Rendering template within layouts/messages
+Rendering messages/show
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/messages/18]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 15:09:31) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+
+NameError (undefined local variable or method `d' for #<MessagesController:0x245868c>):
+  app/controllers/messages_controller.rb:60:in `create'
+
+Rendered rescues/_trace (38.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 15:10:45) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+
+NoMethodError (undefined method `map' for #<Message:0x2382fb4>):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1427:in `set_form_data'
+  lib/twiliolib.rb:128:in `fetch'
+  lib/twiliolib.rb:75:in `request'
+  app/controllers/messages_controller.rb:60:in `create'
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-05-13 15:38:09) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+
+SyntaxError (/Users/keith/cookbook/twilio/app/controllers/messages_controller.rb:60: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+.../Messages", 'POST', { render :text => @message })
+                              ^):
+  
+
+Rendered rescues/_trace (36.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2010-05-13 15:39:35) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+
+SyntaxError (/Users/keith/cookbook/twilio/app/controllers/messages_controller.rb:60: syntax error, unexpected tSYMBEG, expecting kDO or '{' or '('
+.../Messages", 'POST', { render :text => @message}  )
+                              ^):
+  
+
+Rendered rescues/_trace (70.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-13 15:40:36) [POST]
+  Parameters: {"message"=>{"Body"=>"test from the test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+
+Net::HTTPServerException (400 "Bad Request"):
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2097:in `error!'
+  app/controllers/messages_controller.rb:61:in `create'
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-05-14 08:11:03) [GET]
+  [4;36;1mMessage Load (55.6ms)[0m   [0;1mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 1033ms (View: 671, DB: 56) | 200 OK [http://0.0.0.0/messages]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-14 08:11:06) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 2462ms (View: 2298, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-14 08:11:24) [POST]
+  Parameters: {"message"=>{"Body"=>"Friday test", "From"=>"9785719921", "To"=>"9785669432"}, "commit"=>"Create"}
+  [4;35;1mMessage Create (0.6ms)[0m   [0mINSERT INTO "messages" ("SmsMessageSid", "AccountSid", "updated_at", "Body", "From", "To", "created_at") VALUES(NULL, NULL, '2010-05-14 12:11:25', 'Friday test', '9785719921', '9785669432', '2010-05-14 12:11:25')[0m
+Redirected to http://0.0.0.0:3000/messages/19
+Completed in 570ms (DB: 1) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2010-05-14 08:11:25) [GET]
+  Parameters: {"id"=>"19"}
+  [4;36;1mMessage Load (0.3ms)[0m   [0;1mSELECT * FROM "messages" WHERE ("messages"."id" = 19) [0m
+Rendering template within layouts/messages
+Rendering messages/show
+Completed in 11ms (View: 4, DB: 0) | 200 OK [http://0.0.0.0/messages/19]
+
+
+Processing MessagesController#index (for 127.0.0.1 at 2010-05-14 08:14:45) [GET]
+  [4;35;1mMessage Load (4.7ms)[0m   [0mSELECT * FROM "messages" [0m
+Rendering template within layouts/messages
+Rendering messages/index
+Completed in 92ms (View: 80, DB: 5) | 200 OK [http://0.0.0.0/messages]
+
+
+Processing MessagesController#new (for 127.0.0.1 at 2010-05-14 08:14:49) [GET]
+Rendering template within layouts/messages
+Rendering messages/new
+Completed in 98ms (View: 24, DB: 0) | 200 OK [http://0.0.0.0/messages/new]
+
+
+Processing MessagesController#create (for 127.0.0.1 at 2010-05-14 08:15:52) [POST]
+  Parameters: {"message"=>{"Body"=>"Hi Alison - sending this from my test web site via Twilio. You can send a reply if you like", "From"=>"9785719921", "To"=>"9788841363"}, "commit"=>"Create"}
+  [4;36;1mMessage Create (0.8ms)[0m   [0;1mINSERT INTO "messages" ("SmsMessageSid", "AccountSid", "updated_at", "Body", "From", "To", "created_at") VALUES(NULL, NULL, '2010-05-14 12:15:52', 'Hi Alison - sending this from my test web site via Twilio. You can send a reply if you like', '9785719921', '9788841363', '2010-05-14 12:15:52')[0m
+Redirected to http://0.0.0.0:3000/messages/20
+Completed in 868ms (DB: 1) | 302 Found [http://0.0.0.0/messages]
+
+
+Processing MessagesController#show (for 127.0.0.1 at 2010-05-14 08:15:52) [GET]
+  Parameters: {"id"=>"20"}
+  [4;35;1mMessage Load (0.3ms)[0m   [0mSELECT * FROM "messages" WHERE ("messages"."id" = 20) [0m
+Rendering template within layouts/messages
+Rendering messages/show
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://0.0.0.0/messages/20]
